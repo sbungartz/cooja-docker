@@ -1,5 +1,5 @@
 # cooja-docker
-A docker container that has all the dependencies to run the Cooja simulator with the native *Cooja-Motes*.
+A docker container that has all the dependencies to run the [Contiki][contiki] Cooja simulator with the native *Cooja-Motes*.
 
 ## Usage
 
@@ -44,4 +44,5 @@ rundir = System.getenv().get('RUNDIR')
 ```
 
 
+[contiki]: https://github.com/contiki-os/contiki
 [simscript]: https://github.com/contiki-os/contiki/wiki/Using-Cooja-Test-Scripts-to-Automate-Simulations
