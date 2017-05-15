@@ -7,7 +7,10 @@ RUN useradd -ms /bin/bash cooja
 USER cooja
 WORKDIR /home/cooja
 
-RUN git clone --recursive git://github.com/contiki-os/contiki.git contiki
+RUN git clone git://github.com/contiki-os/contiki.git contiki
+RUN cd contiki && \
+    git checkout release-3-1 && \
+    git submodule update --init --recursive
 
 ENV JAVA_TOOL_OPTIONS -Dfile.encoding=UTF8
 
