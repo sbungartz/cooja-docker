@@ -43,6 +43,10 @@ importPackage(java.lang);
 rundir = System.getenv().get('RUNDIR')
 ```
 
+### Use a specific Contiki version
+The tag `sbungartz/cooja:latest` points to the master of contiki at the time of building the image.
+The tag `sbungartz/cooja:3.1` uses the `release-3-1` branch of contiki.
+
 
 [contiki]: https://github.com/contiki-os/contiki
 [simscript]: https://github.com/contiki-os/contiki/wiki/Using-Cooja-Test-Scripts-to-Automate-Simulations
